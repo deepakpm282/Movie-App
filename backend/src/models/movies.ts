@@ -15,9 +15,6 @@ const movieSchema = new mongoose.Schema({
   banner_image: { type: String },
 })
 
-// movieSchema.pre("save", async function (next) {
-//     next();
-// });
 
 const Movie = mongoose.model<MovieType>("Movie", movieSchema);
 
