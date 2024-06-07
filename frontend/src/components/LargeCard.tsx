@@ -58,7 +58,7 @@ const Large_Card: React.FC<LargeCardProps> = ({ movies }) => {
             <div className="absolute bottom-0 left-0 p-6 bg-opacity-50 w- full text-white">
               <h2 className="text-3xl font-extralight">{movie.title}</h2>
               <p className="mt-2 font-thin">{movie.genre}</p>
-              <button className="mt-4 px-3 py-1 bg-pink-800 text-white rounded">
+              <button className="mt-4 px-3 py-1 bg-red-600 text-white rounded">
                 Watch trailer
               </button>
             </div>
@@ -70,8 +70,8 @@ const Large_Card: React.FC<LargeCardProps> = ({ movies }) => {
           <div key={movie._id} className="relative bg-white rounded-lg p-6">
             <button
               onClick={() => toggleLike(movie._id)}
-              className={`absolute right-2 rounded-full ${
-                likedMovies.includes(movie._id) ? "bg-red-500" : "bg-gray-300"
+              className={`absolute top-8 right-7 rounded-full ${
+                likedMovies.includes(movie._id) ? "bg-white-200" : "bg-white-500"
               }`}
             >
               {likedMovies.includes(movie._id) ? "❤️" : "🤍"}

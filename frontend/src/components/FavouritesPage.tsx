@@ -36,7 +36,7 @@ const LikedMovies: React.FC = () => {
           <button onClick={handleBackClick} className="py-4 rounded-md text-black">
             <span className="text-black text-lg">GoBack</span>
           </button>
-          <Link to="/favourites" className="px-4 py-2 text-black rounded-md font-bold">
+          <Link to="" className="px-4 py-2 text-black rounded-md font-bold">
               My Favourite
           </Link>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">

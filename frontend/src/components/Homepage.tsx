@@ -88,12 +88,12 @@ const Header = () => {
             )}
           </div>
         </div>
-        <span className="flex space-x-2 bg-pink-700 mt-1 p-1 border rounded">
+        <span className="flex space-x-2 bg-red-600 mt-1 p-1 border rounded">
           <Link
             to="/components/FavouritesPage"
             className="flex items-center text-white px-3 font-bold"
           >
-            My Favorites
+            🤍 My Favorites
           </Link>
         </span>
       </div>

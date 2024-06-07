@@ -3,6 +3,7 @@ import cors from 'cors';
 import "dotenv/config";
 import mongoose from 'mongoose';
 import movieRoute from './routes/movies'
+import path from 'path'
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string);
 const app = express();
@@ -12,6 +13,7 @@ app.use(cors({
     origin: process.env.FRONTEND_URL,
     credentials: true,
 }))
+app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
 app.use('/api', movieRoute)
 

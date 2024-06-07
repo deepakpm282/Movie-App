@@ -1,6 +1,6 @@
 import { MovieType } from "../../backend/src/models/movies"
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
 export const fetchMovies = async (): Promise<MovieType[]> => {
     const response = await fetch(`${API_BASE_URL}/api/movies`, {
