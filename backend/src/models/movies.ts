@@ -1,4 +1,4 @@
-import mongoose  from "mongoose";
+import mongoose  from 'mongoose';
 
 export type MovieType = {
     _id: string;
@@ -15,9 +15,9 @@ const movieSchema = new mongoose.Schema({
   banner_image: { type: String },
 })
 
-movieSchema.pre("save", async function (next) {
-    next();
-});
+// movieSchema.pre("save", async function (next) {
+//     next();
+// });
 
 const Movie = mongoose.model<MovieType>("Movie", movieSchema);
 
